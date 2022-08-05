@@ -17,7 +17,13 @@ struct ContentView: View {
         
         VStack{
             
+            Text("Welcome back, \(newEmail)")
+            
             TextField("enter your email", text: $newEmail)
+            
+            Image ("Apple")
+                .resizable()
+                .scaledToFit()
             
             Text(newEmail)
         }
